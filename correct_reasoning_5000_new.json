@@ -1,0 +1,962 @@
+[
+  {
+    "question_id": 57,
+    "reasoning": "The man on the left is sitting on a stool and appears to be engaged in a conversation. His hands are clasped together, which might indicate nervousness or discomfort. However, without additional context, it's difficult to determine the exact reason for his fidgeting."
+  },
+  {
+    "question_id": 82,
+    "reasoning": "The man in blue switches the plates on the table after they're set down, which suggests that he might be trying to correct something or adjust his position. Given the context of the conversation, it seems likely that he is concerned about the woman's behavior and possibly fears that she is poisoning him."
+  },
+  {
+    "question_id": 112,
+    "reasoning": "The older man in glasses starts talking louder because he wants to appear authoritative and assertive. He is likely trying to convey his strong opinions about the Heisman Trophy race and the players involved."
+  },
+  {
+    "question_id": 120,
+    "reasoning": "The video does not provide any information about the woman's opinion on the man's views or her surprise at his cooking skills. It only discusses conversation starters and their importance."
+  },
+  {
+    "question_id": 121,
+    "reasoning": "The woman is discussing her difficulty in starting conversations and how Dorian has helped her improve. She also mentions that she wants to ask questions that are easy for others to answer, which suggests that she finds the man helpful."
+  },
+  {
+    "question_id": 124,
+    "reasoning": "The video shows a man and a woman sitting next to each other, engaged in a conversation. The woman is laughing, which suggests that something amusing has occurred during their interaction. Given the context of the conversation, it seems unlikely that the woman would be laughing due to a joke or a fly in her mouth. The conversation appears to be about starting conversations, which might involve sharing personal information or asking questions. Therefore, it is more likely that the woman is laughing because she agrees with the man's statement."
+  },
+  {
+    "question_id": 131,
+    "reasoning": "The video shows two men engaged in a discussion about the themes of the book \"The Man That Corrupted Hadleyburg\" by Mark Twain. They appear to be discussing the content of the book and its implications. There is no indication of disagreement between them; rather, they seem to be sharing their thoughts and insights on the topic."
+  },
+  {
+    "question_id": 133,
+    "reasoning": "The man in the striped shirt made a comment about love being more important than other aspects of life, such as life insurance and mortgages. The brunette woman, who is likely the same person as the woman in the white shirt, seems to be upset by this comment. She responds with a curt \"Oxygen shut up\" and then elaborates on her own experiences with love, suggesting that she wants to find true love that she fights for."
+  },
+  {
+    "question_id": 138,
+    "reasoning": "The man raises his eyebrows in response to the woman's explanation about the ice cream. His eyebrows raise because he is surprised by the woman's detailed explanation about the ice cream's composition and purpose. This reaction suggests he is taken aback by her knowledge or the way she is explaining something."
+  },
+  {
+    "question_id": 139,
+    "reasoning": "The text mentions that the nurses giggled when the man was talking to his daughters, and the family seemed to accept this behavior without any indication of discomfort or annoyance. The family's response suggests they were comfortable with the nurses' reactions."
+  },
+  {
+    "question_id": 145,
+    "reasoning": "The man expresses gratitude and appreciation towards the woman for her help, indicating that he is happy for her."
+  },
+  {
+    "question_id": 149,
+    "reasoning": "The man with white hair is sitting at a desk with papers and a microphone, indicating he might be a supervisor or someone in charge. His body language suggests he is focused on the conversation, possibly listening intently. There is no indication that he is annoyed or disinterested."
+  },
+  {
+    "question_id": 154,
+    "reasoning": "The woman is seen pointing at the man, indicating that she is likely frustrated or exasperated with his behavior. This suggests that she is annoyed by his actions."
+  },
+  {
+    "question_id": 163,
+    "reasoning": "The children are discussing their favorite football clubs and express their opinions on the man in black's choice of playing for Barcelona. They seem to agree with his choice, as they mention that he wants to play like Cristiano Ronaldo and that Barcelona is a good team."
+  },
+  {
+    "question_id": 164,
+    "reasoning": "The question taker expresses excitement and joy about his accomplishments, as indicated by phrases like \"lots of joy\" and \"I think about.\" This suggests a positive feeling towards his achievements."
+  },
+  {
+    "question_id": 193,
+    "reasoning": "The transcript shows that the man in the purple shirt is addressing the audience with a mix of insults and a challenge to participate in a charity dodgeball game. This suggests that there is some past animosity between him and the other man, who is referred to as \"White Goodman.\" The man in the purple shirt seems to be mocking or challenging White Goodman, indicating a history of conflict."
+  },
+  {
+    "question_id": 199,
+    "reasoning": "The man's reaction to his own comment about people going to his house is not explicitly described in the given transcript. However, considering the context of the conversation and the tone of the dialogue, it seems that the man is likely trying to emphasize the seriousness of his statement."
+  },
+  {
+    "question_id": 201,
+    "reasoning": "The man with clear glasses is discussing the Star Wars prequels and their impact on the franchise. He mentions that the prequels are answering questions about the rise of Darth Vader and the reasons behind war and hatred. He also talks about the character of Jar Jar Binks and his role in the galaxy. His tone suggests that he finds the prequels to be a significant contribution to the Star Wars universe."
+  },
+  {
+    "question_id": 204,
+    "reasoning": "The man expresses confidence in the future prospects of the students, emphasizing their ability to see real value and pride in their Butler degrees. He also mentions plans for improvements like the new residence hall and parking garage, indicating an investment in their future."
+  },
+  {
+    "question_id": 208,
+    "reasoning": "The man is dancing in his seat while talking about trying to get trucks to blow their horns, which suggests he is excited about the possibility of hearing the sound of the horns. This excitement could be due to the anticipation of the horn being blown."
+  },
+  {
+    "question_id": 209,
+    "reasoning": "The video shows the man and woman in a car, and the man is driving while the woman is sitting in the passenger seat. They are both smiling and laughing, indicating a friendly and positive interaction. There is no mention of a game of rock-paper-scissors or any specific driving question being asked or answered."
+  },
+  {
+    "question_id": 222,
+    "reasoning": "The female resident whispers to the male resident because she is trying to handle the situation without alerting the officials outside. This is evident from her statement \"I understand what you're saying Mr. Carver and I've been getting our eviction notices,\" indicating she is trying to manage the situation internally."
+  },
+  {
+    "question_id": 229,
+    "reasoning": "The boy is expressing frustration and disappointment about being pranked again, which suggests he is sad due to the unexpected and unwanted prank."
+  },
+  {
+    "question_id": 236,
+    "reasoning": "The woman in gray is pointing her finger at 0:35 as part of her conversation with the other person. This gesture could be used to emphasize a point or to indicate that she is about to make a statement. It is not necessarily an attempt to think of how to leave or to express confusion, nor is it an indication of agreement. Therefore, the most appropriate option is D."
+  },
+  {
+    "question_id": 237,
+    "reasoning": "The man on the right is reading cards that express gratitude and appreciation for his service and fatherhood. He seems to appreciate these messages, as evidenced by his positive comments and the fact that he continues to read more cards."
+  },
+  {
+    "question_id": 245,
+    "reasoning": "The video shows a man giving a gift to another person, which is typically associated with joy and gratitude. The man expresses his happiness in the song \"Magician Never Reveals His Secrets,\" indicating that he feels joyful and grateful."
+  },
+  {
+    "question_id": 249,
+    "reasoning": "The woman is discussing the effectiveness of curfews in reducing juvenile crime, which suggests she has knowledge about the topic. She also mentions evidence from across the country, indicating she is using data to support her points."
+  },
+  {
+    "question_id": 251,
+    "reasoning": "The woman speaks before the man is finished because she seems to be responding to a question or statement made by the man, indicating that she has something to add or clarify. This suggests that she is engaged in the conversation and wants to contribute her thoughts."
+  },
+  {
+    "question_id": 270,
+    "reasoning": "The man expresses disbelief in the idea that religious people are obsessed with the afterlife, stating that he doesn't have distress over his religion and doesn't worry about where he'll end up in the afterlife. This suggests that he views religious people as overly concerned with the afterlife."
+  },
+  {
+    "question_id": 274,
+    "reasoning": "The man in the white striped shirt is laughing because the man in black is trying so hard to get the recipe out of him. This is evident from the context provided in the transcript where the man in black is persistently asking for the recipe, even threatening to spill it if he doesn't get it."
+  },
+  {
+    "question_id": 286,
+    "reasoning": "The transcript indicates that the girl answered the question correctly, and the people are cheering after she does. This suggests that the cheering is due to their excitement over her success in answering the question."
+  },
+  {
+    "question_id": 295,
+    "reasoning": "The blonde woman is sitting at a table with two other people, and she appears to be looking at them with a concerned or worried expression. This suggests that she is not eager to speak with the person she was told to seek out."
+  },
+  {
+    "question_id": 300,
+    "reasoning": "The man's action of moving closer to the woman while saying \"work\" could be interpreted as an attempt to emphasize the importance of her having a job. This could be seen as a subtle way to assert his interest in her financial stability and independence."
+  },
+  {
+    "question_id": 301,
+    "reasoning": "The woman is asking the man why he hasn't been working on his own business, which seems to be a personal matter. It's not clear if he is too busy thinking about his own problems or if he is offended by the question."
+  },
+  {
+    "question_id": 303,
+    "reasoning": "The conversation between the two men suggests a mix of tension and awkwardness. The straight-haired man seems to be trying to explain something important to the man with sunglasses, but there's an underlying tension as he mentions hiring someone else. This implies discomfort rather than comfort."
+  },
+  {
+    "question_id": 308,
+    "reasoning": "The man expresses curiosity and interest in learning more about the girl who started her own convention, as he mentions wanting to \"get to\" learn about it."
+  },
+  {
+    "question_id": 326,
+    "reasoning": "The woman in the video is looking disgusted at the end of the scene, which seems to be related to the conversation about a night nanny. The context suggests that the man is proposing a unique idea for a baby gift involving a night nanny, which might be seen as unconventional or inappropriate by the woman."
+  },
+  {
+    "question_id": 327,
+    "reasoning": "The woman's reaction of rolling her eyes suggests that she is not interested in the man's suggestion about a \"night nanny.\" This is indicated by the context where he mentions it as a special baby gift idea, which she dismisses with \"no I don't mind money.\""
+  },
+  {
+    "question_id": 330,
+    "reasoning": "The woman in purple discusses the importance of reporting back to the community regularly and with short timelines. She emphasizes the need for transparency and a concentrated effort to address issues, suggesting she values careful, well-thought-out decision-making rather than quick ones."
+  },
+  {
+    "question_id": 337,
+    "reasoning": "The transcript indicates that the man feels sad about his brother and wants to have a closer relationship with him. This is evident from phrases like \"you're missing your brother\" and \"you're different.\" The man acknowledges that his brother reacts differently to things and expresses concern about his brother's well-being."
+  },
+  {
+    "question_id": 343,
+    "reasoning": "The transcript indicates that the speaker is presenting awards to individuals, as evidenced by the mention of \"awards\" and the applause following the presentation. The audience's applause is likely in response to the recognition and honor given to the recipients."
+  },
+  {
+    "question_id": 347,
+    "reasoning": "The video shows Marko enthusiastically discussing and using the Sony a5000 camera, indicating excitement and satisfaction with it."
+  },
+  {
+    "question_id": 350,
+    "reasoning": "The video shows the man holding the camera box and then walking away while the child runs off. There is no indication that the man is sad or worried about the child running away. In fact, the man seems to be enjoying himself as he walks away."
+  },
+  {
+    "question_id": 368,
+    "reasoning": "The man in the grey shirt grunts before answering the question, which could indicate discomfort or resistance. However, the context provided does not suggest any physical discomfort. It seems more likely that he is trying to assert his independence or challenge the interrogator's assumptions."
+  },
+  {
+    "question_id": 376,
+    "reasoning": "The young man hesitates to tell the older man about his date because he is worried about how the older man will react. This is evident from the dialogue where he mentions \"Why got a date wow you work fast I guess\" and \"it's true DJs do get all the chicks I don't know about that she chicks I don't know about that she doesn't even like me.\" These statements suggest that the older man might not be supportive or understanding of the young man's dating situation."
+  },
+  {
+    "question_id": 378,
+    "reasoning": "The conversation reveals that the two younger men are discussing their decisions to join the military and express concern about the risks involved. They mention that they were drafted and discuss the bravery of British soldiers, indicating a sense of caution and worry about the military experience."
+  },
+  {
+    "question_id": 380,
+    "reasoning": "The man in the suit seems to be impressed by the man in the striped shirt, as he is asking questions and expressing interest in his work and achievements."
+  },
+  {
+    "question_id": 391,
+    "reasoning": "The lady on the right is nodding her head while the lady on the left is speaking. This suggests that she is actively listening to what the other lady is saying."
+  },
+  {
+    "question_id": 399,
+    "reasoning": "The woman in white is standing behind the man in the tuxedo, who is holding a glass of wine. Her body language suggests she is nervous and unsure about what to do. She is scared."
+  },
+  {
+    "question_id": 400,
+    "reasoning": "The man on the right is standing next to a woman in a wedding dress, who is holding a bouquet of flowers. The man in the leather jacket is standing behind them. It is not clear why the man on the right threw up his hands. However, it could be due to the shock of seeing the man in the leather jacket, as he is not expected to be there. Therefore, the most likely reason is option B."
+  },
+  {
+    "question_id": 411,
+    "reasoning": "The situation changes as the woman in white reveals that she has been approached for an avant-garde documentary study on marriage. This revelation causes tension among the group, especially the couple on the couch who are put on the defensive due to the woman's surprise."
+  },
+  {
+    "question_id": 422,
+    "reasoning": "The woman holds her palm up towards the man at 0:45, which suggests she is interrupting him or expressing frustration. This action is often used to emphasize a point or to stop someone from speaking further."
+  },
+  {
+    "question_id": 436,
+    "reasoning": "The conversation appears to be a casual interview setting, where the man is asking questions and the woman is responding. This suggests a professional relationship, as the man is conducting an interview."
+  },
+  {
+    "question_id": 457,
+    "reasoning": "The transcript does not provide any information about the black-haired woman's feelings towards the woman in the white bra. There is no indication of jealousy, suspicion, or happiness related to the woman in the white bra."
+  },
+  {
+    "question_id": 465,
+    "reasoning": "The transcript mentions that the women express their tiredness and soreness from the flight, but they also acknowledge the positive impact of the music video on their stretching. There is no indication of them feeling annoyed or confused about the new song. They seem to be in a relaxed state, possibly due to their tiredness."
+  },
+  {
+    "question_id": 474,
+    "reasoning": "The video shows the two girls holding and examining a snack item, specifically a Pocky stick. They are discussing its taste and appearance, indicating they are trying to determine if it is enjoyable or not. This suggests they are testing the snack to see how it tastes."
+  },
+  {
+    "question_id": 480,
+    "reasoning": "The man's reaction to the woman's statement about her professional strengths and her preference for working alone suggests that he is taken aback by her assertiveness and confidence. This could indicate that he was surprised by her words."
+  },
+  {
+    "question_id": 495,
+    "reasoning": "The man is seen pushing a button on the woman's desk, which is likely a microphone or recording device. This suggests he wants to capture her voice or thoughts, possibly to document them or record an interview."
+  },
+  {
+    "question_id": 504,
+    "reasoning": "The transcript indicates that the man on the far left believes his team has grown to handle adversity better than in previous years. He mentions that they have overcome adversity such as losing key players early in the preseason and facing logistical challenges like playing in a different arena. This suggests that he thinks his team has improved its resilience and ability to adapt."
+  },
+  {
+    "question_id": 505,
+    "reasoning": "The man on the left is speaking during a live broadcast of a sports event, specifically a basketball game. His pauses could be due to several reasons such as thinking about his next point, gathering his thoughts, or perhaps even stumbling over his words. However, without additional context, it's difficult to pinpoint the exact reason for his pauses."
+  },
+  {
+    "question_id": 520,
+    "reasoning": "The women are engaged in an activity that involves cracking eggs, which suggests they are focused and possibly excited about the process. Their body language, such as the way they hold the eggs and the way they interact with each other, also indicates a level of engagement and enjoyment."
+  },
+  {
+    "question_id": 539,
+    "reasoning": "The transcript shows that the person with glasses (presumably a doctor) asks if the man enjoys pain and then says that most of her patients would disagree with him. This indicates that she is trying to understand his perspective on pain, which suggests she is trying to be empathetic and considerate. When the man refuses the 'local,' it seems like she is surprised and wants to check that he is sure about his decision."
+  },
+  {
+    "question_id": 559,
+    "reasoning": "The video shows two women discussing a product on a television show. The woman on the right is holding up the product and explaining its features. There is no indication of any physical gesture such as nodding or giving a thumbs up. Additionally, the woman on the right is speaking and seems to be enthusiastically explaining the product."
+  },
+  {
+    "question_id": 566,
+    "reasoning": "The woman with blue hair is smiling and nodding while listening to the other woman speak. This indicates that she is engaged and possibly enjoying the conversation."
+  },
+  {
+    "question_id": 582,
+    "reasoning": "The transcript mentions that the man in the red shirt sat at the children's lunch table and interacted with them. It also states that he was able to shake hands with them, which indicates a friendly interaction."
+  },
+  {
+    "question_id": 596,
+    "reasoning": "The woman discusses the challenges and complexities of scheduling swimming practices, mentioning the need for coordination among coaches and the importance of having an adult on deck for every practice. She also talks about the various schedules and practices offered by different schools, indicating a sense of responsibility and dedication to ensuring that practices are organized effectively."
+  },
+  {
+    "question_id": 599,
+    "reasoning": "The video shows a woman sitting in a chair and talking to a man who is also seated across from her. They appear to be discussing a topic related to \"The Balancing Act\" website, which suggests they are likely discussing or promoting the same product. There is no indication of a business partnership or promotion of a different product."
+  },
+  {
+    "question_id": 613,
+    "reasoning": "The boy sitting closest to the man points to the girl sitting next to him after the man asks his first question. This action suggests that the boy might be trying to draw attention to the girl, possibly indicating that she has something interesting or relevant to say about their favorite activity at the park."
+  },
+  {
+    "question_id": 615,
+    "reasoning": "The man in the glasses pointing at the girl with braids suggests a moment of agreement or understanding between them. This could imply that he is acknowledging something she said or did, which aligns with option B."
+  },
+  {
+    "question_id": 619,
+    "reasoning": "The conversation between the two men seems to be intense and confrontational. The man in the green shirt appears to be dismissive and disrespectful towards the man in the black shirt, as evidenced by his use of phrases like \"don't you think your negativity's a little premature\" and \"just shut up.\" This suggests that the man in the green shirt is not only annoyed but also condescending."
+  },
+  {
+    "question_id": 631,
+    "reasoning": "The woman with red hair is sitting in a chair, looking up at the man who is speaking. Her body language suggests she is listening intently but not responding. There is no indication of anger, emotional overreaction, or plotting from her side. Her lack of response could be due to her inability to articulate her thoughts or feelings, possibly because she is overwhelmed or distressed."
+  },
+  {
+    "question_id": 636,
+    "reasoning": "The conversation between the woman and the man in white appears to be a dialogue where the woman is speaking and the man is listening. There is no indication of the man in white being dominant or interrupting the woman. The woman seems to be explaining something about cooking, which suggests she is the one leading the conversation."
+  },
+  {
+    "question_id": 639,
+    "reasoning": "The woman in blue appears to be observing the other woman closely while she performs a procedure on the mannequin. Her expression suggests she might be concerned or focused on the task being performed."
+  },
+  {
+    "question_id": 665,
+    "reasoning": "The older woman is analyzing the blonde woman's behavior and personality traits, which suggests that the blonde woman might feel uncomfortable or defensive about being evaluated. However, the transcript does not explicitly state how the blonde woman feels. It only describes the older woman's analysis without indicating the blonde woman's emotional response."
+  },
+  {
+    "question_id": 667,
+    "reasoning": "The video shows a debate between Donald Trump and Hillary Clinton, where they are seated at a table facing each other. Their body language suggests they are engaged in a heated and combative discussion, as indicated by their facial expressions and gestures."
+  },
+  {
+    "question_id": 675,
+    "reasoning": "The blond woman is talking about generating notoriety and going on tour, which suggests she is feeling confident and possibly excited about her upcoming activities."
+  },
+  {
+    "question_id": 677,
+    "reasoning": "The video shows that the younger people are sitting on the couch watching TV while the older people ask them to talk. There is no indication that the younger people are unwilling to talk or are excited to talk. The older people seem to be trying to get their attention, which might suggest that they are not very intimidating or tired from a party. Therefore, it seems more likely that the younger people are not relieved when asked to talk."
+  },
+  {
+    "question_id": 682,
+    "reasoning": "The conversation starts with a casual tone, mentioning names and personal experiences, which suggests a friendly interaction. However, the topic shifts to a more serious note when the conversation turns to the death of a child and the impact on the speaker's relationship with their daughter. This indicates that while the initial part of the conversation was light-hearted, it eventually became more serious."
+  },
+  {
+    "question_id": 689,
+    "reasoning": "The woman in black is wearing a white scarf around her neck, which suggests she might be cold or uncomfortable. However, the video does not provide any direct indication of her emotional state or reaction to the other woman's speech."
+  },
+  {
+    "question_id": 701,
+    "reasoning": "The conversation between the two individuals is focused on discussing various community events and responsibilities they undertake. They mention going to town halls, volunteering at different locations, and taking on roles such as co-presidents or presidents. Their tone is informative and they seem to be sharing experiences and insights rather than engaging in a personal argument or discussion about food preferences."
+  },
+  {
+    "question_id": 702,
+    "reasoning": "The man pointing to the woman in the middle of his sentence suggests that he is emphasizing a point or directing attention to something specific related to the conversation. It is not likely that he is trying to get her attention, as he is speaking directly to her. There is no indication that she is wearing a baseball cap, which would be a reason for him to point to her. The act of pointing could also be a gesture to emphasize a point, but it is not clear if he wants her to help him finish his sentence or if he is doing it to embarrass her."
+  },
+  {
+    "question_id": 725,
+    "reasoning": "The woman with short black hair is part of a group discussing a situation involving a driver and profit sharing. Her body language and the context suggest she is frustrated and possibly angry at the way the conversation is proceeding."
+  },
+  {
+    "question_id": 747,
+    "reasoning": "The woman pauses and looks at the man before looking through the stamp book, which suggests that she is trying to understand his perspective or confirm something important. This could imply that the stamp book holds something valuable or significant for him."
+  },
+  {
+    "question_id": 753,
+    "reasoning": "The man in the beginning of the video is proposing to a woman, which suggests that he is likely feeling nervous about the situation. He is about to ask her to marry him, which is a significant and emotional decision."
+  },
+  {
+    "question_id": 769,
+    "reasoning": "The conversation appears to be light-hearted and humorous, as indicated by the laughter and the relaxed body language of both women. They seem to be enjoying each other's company and the topic being discussed."
+  },
+  {
+    "question_id": 774,
+    "reasoning": "The man is sitting at a desk, looking down at some papers, which suggests he is preparing for the conversation. There is no indication that he is unhappy or annoyed with what the woman is saying."
+  },
+  {
+    "question_id": 777,
+    "reasoning": "[未能提取推理内容]"
+  },
+  {
+    "question_id": 778,
+    "reasoning": "The man is likely pointing and closing one eye to emphasize a point or to make a visual comparison during their conversation."
+  },
+  {
+    "question_id": 790,
+    "reasoning": "The man in orange seems to be feeling somewhat defensive and slightly annoyed by the man in blue's comments. He acknowledges the man in blue's point about his appearance and life, but he also expresses frustration at being judged based on such a limited perspective. His response suggests that he feels the man in blue's analysis is not complete or comprehensive."
+  },
+  {
+    "question_id": 804,
+    "reasoning": "The older man in the black jacket is seen smoking a cigarette and appears to be speaking with a serious tone. He seems to be giving advice or instructions to the other person, which suggests that he might be trying to calm things down rather than riling them up or starting a fight."
+  },
+  {
+    "question_id": 810,
+    "reasoning": "The woman in the chair is describing her husband's actions, which include defrauding clients, avoiding prison time, cheating on her while she was trying to get pregnant, and insisting that buying the house was their \"second chance.\" These are serious and complex issues that require detailed explanation. The fact that she struggles to explain suggests she might be feeling overwhelmed or ashamed about these matters."
+  },
+  {
+    "question_id": 817,
+    "reasoning": "The woman in the coat is seen standing in a hallway, looking at something off-screen. She then turns and walks away from the camera, indicating that she has finished her conversation with the man in the suit. There is no indication in the transcript or the visual that she asks the man to leave due to needing to make a phone call, need for privacy, or going to a meeting."
+  },
+  {
+    "question_id": 822,
+    "reasoning": "The man's reaction is not explicitly described in the transcript, but we can infer his reaction based on the context. The woman reveals that she is not pregnant, which is a serious lie. The man's reaction is likely to be one of alarm or concern, as he would be worried about the consequences of her lying."
+  },
+  {
+    "question_id": 831,
+    "reasoning": "The woman on the right responds with excitement and humor when the man on the left makes jokes or shares funny stories. However, she also acknowledges the man's contributions and shows appreciation for his input."
+  },
+  {
+    "question_id": 840,
+    "reasoning": "The woman is described as being enthusiastic and excited throughout the video. She is dancing energetically, smiling, and expressing excitement about her plans to tell her friends and family about her experience at work."
+  },
+  {
+    "question_id": 846,
+    "reasoning": "The boy appears to be focused on his task of building a birdhouse, which suggests he is serious about it. There is no indication that he is scared or distracted by the noise around him."
+  },
+  {
+    "question_id": 849,
+    "reasoning": "The conversation suggests that the two women are not familiar with each other, as one woman is surprised to hear about the other's name and background. They are discussing professional matters, specifically related to work and colleagues. There is no indication of personal relationships or conflicts beyond professional ones."
+  },
+  {
+    "question_id": 855,
+    "reasoning": "The transcript shows that the woman is listening attentively and responding to the man's statements, but there is no indication that she is shy or not interested in the conversation. The man is the one who is speaking more frequently."
+  },
+  {
+    "question_id": 866,
+    "reasoning": "The man is holding a yellow device and appears to be explaining something to the woman. His body language suggests he is engaged in a conversation, possibly sharing information or insights. The context of the conversation seems to involve discussing knowledge risks, which implies he might be providing information or expertise."
+  },
+  {
+    "question_id": 878,
+    "reasoning": "The man in the glasses is speaking in a way that suggests he is mocking or ridiculing the group's beliefs, particularly their support for Donald Trump. He uses sarcasm and irony throughout his speech, indicating disagreement with their stance."
+  },
+  {
+    "question_id": 906,
+    "reasoning": "The woman in the video is discussing the importance of having more women in law enforcement, particularly in Phoenix. She mentions that she wants more people to join law enforcement because it helps keep people safe. This aligns with option A."
+  },
+  {
+    "question_id": 909,
+    "reasoning": "The man in plaid is laughing because he is trying to make a joke about his son's success in a tennis tournament. He mentions that his son made the quarterfinals at the Corona Classic, which is a humorous reference to the popular song \"Corona\" by the band Imagine Dragons. This is likely meant to be a light-hearted comment rather than a serious one."
+  },
+  {
+    "question_id": 910,
+    "reasoning": "The conversation between the two men appears to be focused on political matters, specifically regarding the likelihood of Donald Trump winning the 2020 election. They express strong opinions and seem to be in agreement about the outcome. There is no indication of personal animosity or secret plotting."
+  },
+  {
+    "question_id": 911,
+    "reasoning": "The man on the left is sitting at a desk with papers in front of him, which suggests he is engaged in some form of work or activity. However, there is no indication in the provided transcript or image that he listens to anything."
+  },
+  {
+    "question_id": 921,
+    "reasoning": "The woman is clearly frustrated and annoyed by the man's persistent questioning about the brain aneurysm. Her body language and facial expressions suggest she is irritated by his relentless pursuit of information. She also mentions that she has already called Dr. Bernstein, indicating her impatience with the man's demands. Therefore, the most appropriate answer is A."
+  },
+  {
+    "question_id": 923,
+    "reasoning": "The man is repeatedly asking about the brain aneurysm and its seriousness, indicating that he is concerned and wants to understand the situation. The woman is explaining the medical details, which suggests that she is providing information rather than interrupting him. Therefore, the man's frustration is likely due to his inability to get the information he needs."
+  },
+  {
+    "question_id": 944,
+    "reasoning": "The conversation between the two individuals appears to be light-hearted and playful, as evidenced by the casual tone and the mention of \"secret\" which is often used in a teasing manner. The exchange also includes references to the movie they are discussing, indicating a shared interest."
+  },
+  {
+    "question_id": 957,
+    "reasoning": "The woman is clearly upset and frustrated with the man's behavior. He is interrupting her and making her feel uncomfortable. She is trying to leave but he is trying to keep her company."
+  },
+  {
+    "question_id": 959,
+    "reasoning": "The transcript shows a conversation where the man is trying to convince the woman to stay, but she is clearly uncomfortable and wants to leave. The woman's repeated statements about not wanting to do things and wanting to go back to work suggest that she is feeling overwhelmed and possibly scared."
+  },
+  {
+    "question_id": 972,
+    "reasoning": "The man in the blue shirt is holding a business card and appears to be showing it to the man in the black suit. This suggests that he is trying to establish some form of connection or relationship with the man in the black suit. However, his body language and facial expression do not indicate any strong emotions like trust, jealousy, or suspicion."
+  },
+  {
+    "question_id": 982,
+    "reasoning": "The woman enters the building and is immediately confronted by the man in the hat, who is wearing a plaid shirt. The man seems to be in a hurry and is speaking to the woman in a somewhat agitated manner. The woman appears to be confused and angry at the man in plaid because she thinks she is going to have to do manual labor."
+  },
+  {
+    "question_id": 990,
+    "reasoning": "The man's statement about the woman screwing up implies a sense of betrayal or failure, which could lead to feelings of embarrassment or anger. Given the context of a serious conversation about a crime, it's likely that the woman would feel uncomfortable or annoyed by such a comment."
+  },
+  {
+    "question_id": 993,
+    "reasoning": "The conversation suggests a professional relationship where the woman is likely a detective or investigator, and the man in the green jacket could be a doctor or researcher. The dialogue indicates they are discussing their work and personal lives, which implies a collaborative or investigative nature."
+  },
+  {
+    "question_id": 1003,
+    "reasoning": "The man on the left is discussing the content of the video clip, which includes a statement about vetting candidates and the personal story of Dr. Ben Carson. He mentions that he has no problem with vetting but is concerned about being lied about. His tone suggests he is frustrated by the video clip as it contradicts his stance on vetting."
+  },
+  {
+    "question_id": 1016,
+    "reasoning": "The man in the glasses and gray suit is standing in front of the judge, addressing the court about a petition related to his son. He is speaking passionately about the situation involving his son and his family. There is no indication of any physical interaction between him and the woman in the leopard shirt."
+  },
+  {
+    "question_id": 1026,
+    "reasoning": "The man is speaking loudly to the woman, which suggests he is trying to make his point clear and forceful. This could be due to the seriousness of the situation, as indicated by the context of the conversation about their side of the story and the challenges they face."
+  },
+  {
+    "question_id": 1047,
+    "reasoning": "The woman in white is discussing her experience with a web series and how it has given her a sense of validation and legitimacy. She mentions feeling lucky to have experienced the web series before having to prove herself to others. This suggests that she might be feeling a sense of relief or satisfaction from her experiences rather than being tired, nervous, or bored."
+  },
+  {
+    "question_id": 1048,
+    "reasoning": "The woman with the cap starts off smiling and seems to be trying to be accommodating, but her tone changes to frustration and anger as the conversation progresses. She becomes more hostile and confrontational towards the man."
+  },
+  {
+    "question_id": 1049,
+    "reasoning": "The conversation shows the woman with blonde hair being confrontational and scolding the man for his actions, indicating a negative interaction. After leaving the counter, the woman continues to speak negatively about the man, which suggests she is still upset."
+  },
+  {
+    "question_id": 1067,
+    "reasoning": "The woman is clearly uncomfortable and defensive when the man suggests she is a \"psycho stalker.\" Her repeated denial and the fact that she is trying to explain her actions suggest she is not genuinely concerned about being labeled as such."
+  },
+  {
+    "question_id": 1078,
+    "reasoning": "The transcript shows the man with white hair responding to questions from a judge, indicating frustration and difficulty in answering. His statements such as \"I don't track them\" and \"it was so easy for you to answer Mr. Churna\" suggest he feels the questions are not relevant or challenging."
+  },
+  {
+    "question_id": 1081,
+    "reasoning": "The woman is asking \"why are you yelling?\" which suggests she is questioning the driver's behavior. There is no indication that she is laughing or finding the situation amusing. The context implies that she is concerned about the driver's behavior rather than being amused."
+  },
+  {
+    "question_id": 1087,
+    "reasoning": "The man with glasses appears to be listening intently to George and Lynne, as evidenced by his attentive posture and occasional nods. However, he seems to be struggling with the situation, as he keeps trying to come up with new solutions despite being denied. This suggests that while he is paying attention, he is not fully understanding the gravity of the situation."
+  },
+  {
+    "question_id": 1094,
+    "reasoning": "[未能提取推理内容]"
+  },
+  {
+    "question_id": 1104,
+    "reasoning": "The woman in blue is seen trying to communicate with the woman in beige, suggesting she is attempting to help her calm down. However, the transcript indicates that the woman in beige becomes angry and explosive, which implies that she does not successfully calm down."
+  },
+  {
+    "question_id": 1111,
+    "reasoning": "The curly-haired man seems to be seeking advice about marriage from the other man, indicating that he is conflicted about it. He mentions that he has never tried marriage before and that it can be painful, suggesting that he is unsure about whether he wants to pursue it."
+  },
+  {
+    "question_id": 1122,
+    "reasoning": "The man is seen sitting at a desk with a mug in front of him, which suggests he is in a comfortable setting. He is also engaged in conversation with the woman, indicating he is not nervous or anxious."
+  },
+  {
+    "question_id": 1124,
+    "reasoning": "The lady, Nicola Sturgeon, is discussing Scotland's attractions such as haggis, scotch whisky, scenery, and comedians. She also mentions that Scotland has gone through a similar process to the United Kingdom, which she refers to as \"throwing their stuff into the water.\" This implies that she sees Scotland as a place with its own unique culture and history."
+  },
+  {
+    "question_id": 1132,
+    "reasoning": "The woman is sitting on a bed and speaking passionately about the importance of not getting caught up in arguments. Her frequent gestures and bouncing could be interpreted as a way to emphasize her points and convey her enthusiasm. This behavior might also suggest she is trying to engage the audience more effectively."
+  },
+  {
+    "question_id": 1140,
+    "reasoning": "The video shows a tense and suspenseful atmosphere as characters accuse each other and discuss the possibility of a murderer. This suggests a dark tone rather than a light or happy one."
+  },
+  {
+    "question_id": 1142,
+    "reasoning": "The lady who is tied up in the chair appears to be in distress and is likely frustrated with the situation. Her rolling of her eyes suggests annoyance or exasperation."
+  },
+  {
+    "question_id": 1159,
+    "reasoning": "The man in the white shirt appears to be speaking to the man with curly hair in a serious manner, using phrases like \"wow\" and \"at least.\" He seems to be questioning or challenging the man with curly hair, which suggests skepticism and unease."
+  },
+  {
+    "question_id": 1185,
+    "reasoning": "The woman in the video discusses the importance of school and mentions that it has more responsibilities and more time to think about it. She also emphasizes the help from family, community, and employers in bringing her up and finishing her school. These points indicate that she views school as a positive experience."
+  },
+  {
+    "question_id": 1191,
+    "reasoning": "The woman smiles after the man in the pink shirt walks away, which suggests she finds something amusing or entertaining about what happened. Given the context of the conversation, it seems likely that the man with glasses made a joke or said something funny, causing her to smile."
+  },
+  {
+    "question_id": 1218,
+    "reasoning": "In the situation described, the man is the one who is seeking information from the woman. He is asking about the dimensions of the trailer and questioning whether it is suitable for living in. The woman is responding to these questions, indicating that she is providing information to the man."
+  },
+  {
+    "question_id": 1220,
+    "reasoning": "The woman's statement \"I know something was wrong because obviously your phone would just die and that would be crazy\" suggests that she is trying to explain why her phone died without admitting it directly. This implies that she is trying to avoid admitting responsibility for the phone dying, which could be embarrassing."
+  },
+  {
+    "question_id": 1239,
+    "reasoning": "The man in glasses is not checking his phone, asking a question, or trying to poke the woman. He is simply pointing at something, which could be any number of things depending on the context of the show or segment."
+  },
+  {
+    "question_id": 1244,
+    "reasoning": "The man in the tuxedo is seen tasting the food and his reaction is not explicitly described. However, the context suggests that he is trying the dish and expressing appreciation for it."
+  },
+  {
+    "question_id": 1245,
+    "reasoning": "The blonde man is seen smiling and looking down, which suggests he is pleased with the dish. High-fiving someone typically indicates agreement or approval."
+  },
+  {
+    "question_id": 1249,
+    "reasoning": "The woman is described as the principal and is wearing a tie, which typically indicates a higher position in the school hierarchy. Additionally, she is speaking confidently and addressing the man directly, suggesting she holds more authority."
+  },
+  {
+    "question_id": 1251,
+    "reasoning": "The audience's laughter in the transcript suggests that they find the comment amusing due to its unexpectedness or absurdity. The expression \"been dug\" is not commonly used in English, which makes it humorous."
+  },
+  {
+    "question_id": 1261,
+    "reasoning": "The man in the white jacket is visibly upset and angry when the man in the black robe talks to the woman. His body language and facial expression suggest that he feels insulted or threatened by the man in the black robe's words. He seems to be trying to protect the woman from the man in the black robe's insults."
+  },
+  {
+    "question_id": 1269,
+    "reasoning": "The woman enters the room and immediately engages in a heated conversation with the man. Her body language suggests that she is upset or angry, which is indicated by her loud tone and aggressive hand gestures."
+  },
+  {
+    "question_id": 1272,
+    "reasoning": "The conversation between the two women suggests a playful and casual interaction, possibly indicating a close relationship. The use of an elephant finger puppet could be a humorous gesture to add to the lighthearted tone of their conversation."
+  },
+  {
+    "question_id": 1290,
+    "reasoning": "The video shows the short man standing confidently in front of the tall man, indicating that he is not trying to impress the tall man. He is also not distracted by his phone or tapping his foot impatiently. Therefore, the correct answer is not related to these behaviors."
+  },
+  {
+    "question_id": 1309,
+    "reasoning": "The man puts his arms up at 0:08 as a gesture of surrender or resignation, which aligns with option C and D. However, since the question asks for a single letter, we should choose the most direct and fitting option."
+  },
+  {
+    "question_id": 1316,
+    "reasoning": "In the video, the man in the white blazer is speaking assertively and sternly to the woman in black. He uses phrases like \"I do not like to be turned away\" and \"I've made a terrible mistake in my life,\" indicating that he is the one who is making decisions and imposing his will on the other character."
+  },
+  {
+    "question_id": 1322,
+    "reasoning": "The man says \"Oh God\" twice in the transcript, indicating surprise or disbelief. This suggests that he was not expecting the gift, as he had no prior knowledge of its existence."
+  },
+  {
+    "question_id": 1325,
+    "reasoning": "The video appears to be a casual discussion between two individuals, likely friends or acquaintances, as indicated by their relaxed body language and informal attire. They are engaged in a conversation without any signs of anger or distress. The tone seems light-hearted and conversational."
+  },
+  {
+    "question_id": 1326,
+    "reasoning": "The woman on the left appears to be speaking in a casual and conversational manner. Her tone seems relaxed and she is engaging with the other person in a friendly way. There is no indication of sarcasm, condescension, evasiveness, or unhelpfulness."
+  },
+  {
+    "question_id": 1343,
+    "reasoning": "The context provided indicates that the woman is laughing at something related to the conversation between the two men. Given the nature of the discussion, which involves political topics and references to specific individuals and events, it is likely that the laughter stems from a humorous moment or statement made by one of the men."
+  },
+  {
+    "question_id": 1347,
+    "reasoning": "The girls are described as being competitive and playful in the video. They engage in a game where they try to remove cards from a pile, which suggests competitiveness. Additionally, they are described as being \"playful\" when they laugh and make jokes during the game."
+  },
+  {
+    "question_id": 1362,
+    "reasoning": "The man discusses the importance of young people voting and mentions that young people are more interested and engaged than he initially thought. He also talks about talking to young people about the issues they care about and getting them interested in voting."
+  },
+  {
+    "question_id": 1367,
+    "reasoning": "The woman's tone starts off as calm and composed, but it becomes increasingly frustrated and upset as the conversation progresses. She uses phrases like \"I understand each of the words saying I understand each of the words\" which indicates she is trying to communicate clearly, but then she says \"that you're saying but I don't understand what you're,\" showing confusion and frustration."
+  },
+  {
+    "question_id": 1371,
+    "reasoning": "The blond woman is described as reacting to the pain by saying \"I think it's probably just because my skin is like ya know little afraid your skin's gonna know yeah I'm afraid your skin's gonna know yeah I'm fine I'm like fine it's just like all fine I'm like fine it's just like all itchy.\" This indicates that she is trying to cope with the pain by attributing it to her skin being sensitive."
+  },
+  {
+    "question_id": 1375,
+    "reasoning": "The video shows two women applying makeup products to each other, and one of them experiences discomfort and itching. The dialogue suggests that the discomfort is related to the makeup application process rather than an allergic reaction or a panic attack."
+  },
+  {
+    "question_id": 1388,
+    "reasoning": "The man's expression and body language suggest that he is not happy about having to do the thumbnail. His tilting head could be a way to emphasize his disappointment."
+  },
+  {
+    "question_id": 1393,
+    "reasoning": "The transcript mentions that the man is discussing something related to fake news and Donald Trump. It also includes a quote from the man saying \"Donald Trump is a fighter jet pilot blowing up CNN out of the air.\" This statement seems to be making a joke or a comment that might be considered humorous by the audience."
+  },
+  {
+    "question_id": 1418,
+    "reasoning": "The video shows a man playing a card game with a woman in a restaurant setting. The two men in the studio are surprised and impressed because they witness a cool magic trick performed by the man in the video. This magic trick involves the man setting his watch to a specific time, which is then revealed to be the exact time the woman set her watch to."
+  },
+  {
+    "question_id": 1468,
+    "reasoning": "The girl without sleeves is seen turning around quickly at 0:15, which suggests she might be reacting to something unexpected or trying to change the subject. Given the context of the conversation, it seems more likely that she is trying to change the topic rather than expressing indifference."
+  },
+  {
+    "question_id": 1480,
+    "reasoning": "The conversation between the two men appears to be intense and personal, discussing past events and betrayals that seem to have significant emotional weight. Given that they are in a formal setting, such as a gala or a high-profile event, it is unusual for such a serious and potentially confrontational discussion to take place in a public setting where others might be present."
+  },
+  {
+    "question_id": 1482,
+    "reasoning": "The man is holding the microphone close to the woman's mouth while she speaks, indicating engagement. His body language, such as leaning in slightly, suggests he is listening attentively."
+  },
+  {
+    "question_id": 1500,
+    "reasoning": "The transcript shows that the woman in blue believes the graduates from UCL are successful, as she mentions \"pretty decent engineers\" and \"UCL darling that's London for the sons of tradesman Lawrence.\" The man, however, seems to disagree, suggesting that the graduates might be from a working-class background."
+  },
+  {
+    "question_id": 1534,
+    "reasoning": "The woman in the video is lying in a hospital bed, which suggests she is not feeling well. Her statement \"I feel great\" contradicts her actual condition. Additionally, her tone of voice does not seem genuine or honest."
+  },
+  {
+    "question_id": 1536,
+    "reasoning": "The context provided in the transcript suggests that the woman is lying in a hospital bed, pretending to be asleep. The man's comment \"And, he's gone\" implies that someone has died, which would be a sad and unexpected event for the woman. Given that she is lying in a hospital bed and pretending to be asleep, it is likely that she is reacting to the news of someone's death with a mix of sadness and disbelief."
+  },
+  {
+    "question_id": 1538,
+    "reasoning": "The video features a humorous interaction between the host, guests, and a kangaroo. The host is holding the kangaroo while engaging in light-hearted conversation with the guests. The guests appear amused and entertained by the situation. The overall tone of the video is friendly and warm, with a touch of humor."
+  },
+  {
+    "question_id": 1544,
+    "reasoning": "The kangaroo is being held by the host and is interacting with the guests, indicating a friendly and charmed interaction rather than fear or focus on capturing."
+  },
+  {
+    "question_id": 1560,
+    "reasoning": "The man with the blue tie is leaning back in his chair while speaking, which suggests a relaxed posture rather than one of anger or hiding something. His body language does not indicate any signs of aggression or discomfort."
+  },
+  {
+    "question_id": 1571,
+    "reasoning": "The man in white is discussing his success in stopping crimes and mentions having \"some luck recently.\" He also expresses readiness to move up in his career and suggests developing a signal for communication. These statements indicate a sense of pride and confidence in his abilities."
+  },
+  {
+    "question_id": 1575,
+    "reasoning": "The man without glasses is sitting at a desk in what appears to be a news studio, facing another person who is speaking. The man without glasses is holding a pen and looking down at it, which suggests he might be preparing to write something down or is simply focused on the conversation. There is no indication of nervousness, boredom, or distraction from the clock on the wall."
+  },
+  {
+    "question_id": 1577,
+    "reasoning": "The man in the video is on a late-night talk show and is making a humorous statement about women's suffrage. He is using exaggerated hand gestures to emphasize his point, which suggests that he is trying to be funny."
+  },
+  {
+    "question_id": 1582,
+    "reasoning": "The woman seems to be engaged in conversation with the man, showing interest in his thoughts on art. Her body language and facial expressions suggest she is enjoying the discussion."
+  },
+  {
+    "question_id": 1586,
+    "reasoning": "The video shows a group of people sitting on a couch, clapping, and bowing to each other. This action is typically done as a gesture of respect or gratitude, which aligns with option B."
+  },
+  {
+    "question_id": 1589,
+    "reasoning": "The man with the hat appears to be upset and frustrated with the woman's behavior. He seems to have expected her to show some remorse or concern for his absence, but instead, she is focused on her own activities without acknowledging his presence."
+  },
+  {
+    "question_id": 1595,
+    "reasoning": "The little girl is surprised and thrilled to see the driver. This can be inferred from her excitement about meeting her favorite driver, Scott Dixon, and her reaction to the surprise visit."
+  },
+  {
+    "question_id": 1605,
+    "reasoning": "The video shows a mother and her son having an argument, which suggests tension between them. However, the mother is seen trying to calm her son down, indicating some level of concern for his well-being. This could imply that while there may be issues, they are not necessarily hostile towards each other."
+  },
+  {
+    "question_id": 1619,
+    "reasoning": "The woman is asking the man about different people in an attempt to determine how she might know him. This is evident from her repeated questioning and the context provided in the transcript."
+  },
+  {
+    "question_id": 1621,
+    "reasoning": "The man's response suggests that he is trying to explain his situation to the woman, which indicates that he is thinking of how to explain it to her."
+  },
+  {
+    "question_id": 1623,
+    "reasoning": "The man with the mustache is receiving money from another person, which suggests he is in need of financial assistance. However, the context provided indicates that the man with the mustache is being told about his work schedule and expectations, implying that he might have been overpaid or underpaid. Given these details, it seems unlikely that he would feel very grateful for the money, as he may believe he should have received more."
+  },
+  {
+    "question_id": 1626,
+    "reasoning": "The woman appears serious for brief periods of time while recounting her experiences and anecdotes. This suggests that she is emphasizing certain parts of her story, possibly to make them more impactful or to highlight specific details."
+  },
+  {
+    "question_id": 1629,
+    "reasoning": "The context provided suggests that the man in blue is driving and talking about Sarah Connors, which might be a reference to a movie or TV show. The mention of \"silent but deadly drive\" could imply he is being cautious or careful, possibly due to the slow turn mentioned later in the transcript."
+  },
+  {
+    "question_id": 1640,
+    "reasoning": "The man in the brown jacket is described as sitting on a couch with his legs crossed, which suggests a relaxed and confident posture. He is also described as being \"composed\" and \"calm,\" which aligns with the options provided."
+  },
+  {
+    "question_id": 1644,
+    "reasoning": "[未能提取推理内容]"
+  },
+  {
+    "question_id": 1665,
+    "reasoning": "The woman in blue seems to be distressed by the man's idea of moving back to New York City. She expresses concern about the impact on their family and the difficulty of commuting to work. Despite her distress, she acknowledges that they have put Annie and Josh into private schools, suggesting she may still agree with his idea."
+  },
+  {
+    "question_id": 1669,
+    "reasoning": "The blonde woman is talking about her situation in a way that seems to be both frustrated and somewhat resigned. She mentions being legally blind and having a tumor, which are serious issues, but she also uses phrases like \"I'm legally blind\" and \"my body's kind of just giving up,\" indicating a sense of resignation. However, she also mentions that her hair has grown back, which suggests a positive outlook on her situation."
+  },
+  {
+    "question_id": 1670,
+    "reasoning": "The man on the right is speaking passionately about his experiences and the actions he took during his time in the military. His tone is not skeptical, elated, or bored. Instead, it seems to be one of pride and recounting of heroic deeds."
+  },
+  {
+    "question_id": 1679,
+    "reasoning": "The video shows people pointing at different parts of the world map but not answering the question \"Can you name any country on this map?\" This suggests they might be distracted by the map and forget to answer."
+  },
+  {
+    "question_id": 1701,
+    "reasoning": "The man in the tie appears to be engaged in a serious conversation, which suggests he is not casual or playful. His body language and facial expressions indicate that he is focused on the discussion at hand, which implies he is not impatient or dismissive. The tone of the conversation also does not suggest he is nervous."
+  },
+  {
+    "question_id": 1706,
+    "reasoning": "The man on the left is discussing the media coverage of Planned Parenthood, specifically mentioning that it is being framed as an anti-abortion issue. He also mentions that the story has been debunked and that the media is not calling it what it is. This suggests that he believes the media attention is unnecessary and that there is a conspiracy behind it."
+  },
+  {
+    "question_id": 1722,
+    "reasoning": "The man expresses surprise at the idea of children calling their moms by their first names, which suggests he finds it shocking."
+  },
+  {
+    "question_id": 1732,
+    "reasoning": "The transcript mentions that the person with dark hair is talking to someone in an office setting and then says \"I'm so sorry about I hire William Davis.\" This indicates that he is interrupted by a phone call while he was speaking. There is no mention of him being annoyed or flustered by the interruption."
+  },
+  {
+    "question_id": 1733,
+    "reasoning": "The man in the black shirt seems to be in a hurry and is interrupted by the woman, which suggests he might not want to discuss his future plans. Additionally, the tone of the conversation indicates a disagreement or conflict, which could imply he doesn't want to accept the conclusion that they are not right for each other."
+  },
+  {
+    "question_id": 1742,
+    "reasoning": "The main character, James Corden, is seen laughing and clapping along with the audience, indicating a light-hearted and humorous tone. His body language and facial expressions suggest he is enjoying the performance and engaging positively with the participants."
+  },
+  {
+    "question_id": 1745,
+    "reasoning": "The girl in the blue is speaking about her business and the progress she has made. There is no indication of worry, seriousness, or lack of optimism in her speech."
+  },
+  {
+    "question_id": 1750,
+    "reasoning": "The woman is discussing the opposition to including maternity care as an essential benefit in healthcare reform. She mentions that she remembers a debate about making maternity care an essential benefit, which indicates her involvement in the issue. She also expresses frustration that the debate was not inclusive of women's perspectives, suggesting that she feels not enough people with different viewpoints are involved in decision-making."
+  },
+  {
+    "question_id": 1753,
+    "reasoning": "The repetition of \"ratbag\" suggests a familiarity between the two individuals, indicating that they might have a history or relationship that involves this nickname. This implies a level of comfort and possibly even a playful dynamic between them."
+  },
+  {
+    "question_id": 1767,
+    "reasoning": "The woman with the white top is sitting next to the woman with the grey top, who is speaking. The woman with the white top is not actively participating in the conversation, but rather listening. Her rolling of her eyes could be interpreted as a sign of annoyance or disbelief, possibly due to the argument between the other two women."
+  },
+  {
+    "question_id": 1780,
+    "reasoning": "The man seems to be listening attentively to the woman's speech about moving to Seattle and attending college. His body language suggests he is engaged and interested in what she is saying. There is no indication of happiness or excitement, nor confusion. The tone of his response indicates understanding rather than disagreement."
+  },
+  {
+    "question_id": 1786,
+    "reasoning": "The man is discussing the final debate fireworks and mentions that Hillary Clinton did not address questions related to WikiLeaks and the taxi incident. He also criticizes her for not taking an opportunity to destroy her in the debate. This indicates that he is concerned about how a candidate had missed opportunities."
+  },
+  {
+    "question_id": 1796,
+    "reasoning": "[未能提取推理内容]"
+  },
+  {
+    "question_id": 1810,
+    "reasoning": "The man in the video is discussing the perception of the world as black and white, which is a metaphorical way of saying that some people have a very limited view of the world. He uses phrases like \"respects see these people as if the world were all black and white\" and \"world were all black and white not,\" indicating that he is expressing disapproval or disagreement with this perspective. His tone and choice of words suggest that he does not share this view."
+  },
+  {
+    "question_id": 1817,
+    "reasoning": "The transcript does not provide any information about the man on the right's attire or his agreement with the person on the left. It also does not mention him considering the other man's opinion before speaking."
+  },
+  {
+    "question_id": 1831,
+    "reasoning": "The transcript mentions that the man with the white shirt played a normal game after thinking he was going to play a full I push. It also states that he lost two times to Bunny in very long, big mech games. This suggests that he did not succeed in the first game he talked about."
+  },
+  {
+    "question_id": 1843,
+    "reasoning": "The man in grey is seen sitting at a desk, gesturing with his hands, and speaking into a microphone. His body language suggests he is engaged and passionate about the topic he is discussing. He appears to be knowledgeable and serious about the subject matter."
+  },
+  {
+    "question_id": 1845,
+    "reasoning": "The transcript shows the man in the black suit laughing after the man in the gray suit makes a joke about the debate being \"roughed up\" by the Republican candidates. This suggests that the man in the black suit finds the joke amusing."
+  },
+  {
+    "question_id": 1848,
+    "reasoning": "The woman in plaid is sitting in an office setting, holding a piece of paper, which suggests she has brought a CV. However, the man's question about the CV seems to be unexpected, as she has not mentioned having one. This could imply that she feels lost or unsure about the question."
+  },
+  {
+    "question_id": 1853,
+    "reasoning": "The man nods when the woman with the short blonde hair talks because he is agreeing with what she is saying and taking her advice to heart. This is evident from the context provided in the transcript, where the man listens attentively and nods in response to the woman's words."
+  },
+  {
+    "question_id": 1854,
+    "reasoning": "The woman in blue is discussing her role as a new boss overlord at the station, which suggests she is enthusiastic about her new position. There is no indication of worry or concern regarding her job."
+  },
+  {
+    "question_id": 1865,
+    "reasoning": "The woman brushing her hair behind her ears while talking to the man suggests that she is preparing herself for a serious conversation. This action indicates that she is about to ask a question that might make the conversation more intimate or personal. It is not about showing off earrings, nor is it related to the man's cooking skills. Therefore, the most likely reason is that she is preparing for a serious conversation."
+  },
+  {
+    "question_id": 1869,
+    "reasoning": "The older man in the gray suit is speaking about taking the \"fancy option\" when offered something, suggesting he is teaching the younger men how to impress clients by appearing fancy. This aligns with option D."
+  },
+  {
+    "question_id": 1877,
+    "reasoning": "The orange-haired man's reaction could be due to several reasons, but given the context of the video, it seems most likely that he is surprised by something the woman said. This could be related to her statement about the car being luxurious or her ability to recognize the car."
+  },
+  {
+    "question_id": 1880,
+    "reasoning": "The elderly man is speaking about his past experiences and relationships, which seems to be a personal and emotional topic. The women are standing close to him, indicating they are listening attentively. There is no indication of them being bored or entertained."
+  },
+  {
+    "question_id": 1887,
+    "reasoning": "The man in the striped shirt is not wearing a hat, so option A is incorrect. There is no indication that the man in the striped shirt cares about the man's comment, so option B is incorrect. The man in the striped shirt does not seem to dismiss the man's comment as irrelevant, so option C is incorrect. The man in the striped shirt seems to be somewhat confused by what the man says, as he asks \"What the?\" and \"I don't know what you're talking about.\" Therefore, option D is the most likely correct answer."
+  },
+  {
+    "question_id": 1893,
+    "reasoning": "The woman describes feeling horrified and desperate to avoid going to school, indicating a strong emotional response to the bullying. She also mentions that she was \"horrified\" and \"depressed,\" suggesting a negative reaction to the incident."
+  },
+  {
+    "question_id": 1900,
+    "reasoning": "The woman in the light coat is holding her hand out to the man in the red shirt, which could indicate a gesture of greeting or offering assistance. However, without additional context, it's difficult to determine the exact reason behind her action."
+  },
+  {
+    "question_id": 1903,
+    "reasoning": "The man in black is seen holding a microphone and speaking, which suggests he has a clear opinion. He is also described as having a \"clear opinion\" in the transcript."
+  },
+  {
+    "question_id": 1917,
+    "reasoning": "The man in the cowboy hat is standing next to the woman in the robe, who is explaining the drink options. The confusion could stem from the woman's explanation being unclear or the man not understanding the details of the drinks she is describing."
+  },
+  {
+    "question_id": 1928,
+    "reasoning": "The man on the left appears to be discussing serious and possibly emotional topics, such as political events and personal feelings. His tone suggests a mix of honesty and emotional depth, which aligns more closely with option C."
+  },
+  {
+    "question_id": 1930,
+    "reasoning": "The blonde woman is sitting across from the man in the brown tie during a conversation. She appears to be listening attentively and responding to his statements. Her body language suggests she is engaged in the discussion, which implies a level of interest or concern."
+  },
+  {
+    "question_id": 1937,
+    "reasoning": "The video shows the older women gathered around a table, engaged in conversation. There is no indication that they are worried about the young person being injured or that they are discussing their favorite food. Additionally, there is no evidence that the young person has revealed any secrets."
+  },
+  {
+    "question_id": 1938,
+    "reasoning": "The young person is described as walking into the room, but there is no indication of their emotional state or reaction to the situation. They are simply entering the room."
+  },
+  {
+    "question_id": 1950,
+    "reasoning": "The video content shows a man in a suit and tie speaking on a stage, likely delivering a speech or monologue. The tone of his speech seems serious and focused on addressing a political issue. There is no indication of humor or laughter from the audience, nor any signs of anxiety or hysteria."
+  },
+  {
+    "question_id": 1951,
+    "reasoning": "The man in the video is making a humorous commentary on the White House's statement regarding the KKK and neo-Nazis. He is exaggerating the situation and using it as a joke, which likely causes the audience to laugh."
+  },
+  {
+    "question_id": 1959,
+    "reasoning": "The host's reaction is not explicitly described in the transcript, but the tone suggests surprise or amusement at the name \"Ed.\" This aligns more closely with option D."
+  },
+  {
+    "question_id": 1975,
+    "reasoning": "In the video, Eric is the one who seems to be leading the conversation and setting the tone for the group. He is the one who initiates the discussion about farming on the reply walls and sets a tone for the conversation. His confident demeanor and the way he speaks also suggest that he is the most dominant person in the room."
+  },
+  {
+    "question_id": 1994,
+    "reasoning": "The context provided suggests that the woman in overalls and the woman in the necklaces are likely discussing something related to the man's question about Maggie's wedding. Given that they are both looking at each other, it implies that they are engaged in conversation and possibly trying to recall information or confirm details about Maggie's situation."
+  },
+  {
+    "question_id": 2000,
+    "reasoning": "The video shows the children giving the donut to their father, and the father seems pleased with the gesture. There is no indication of disappointment or anger from the family."
+  },
+  {
+    "question_id": 2001,
+    "reasoning": "The woman is seen smiling and interacting with her children in various settings, indicating a positive and happy demeanor."
+  },
+  {
+    "question_id": 2002,
+    "reasoning": "The audience applauds because they are having a good time. The context provided suggests that the conversation between the two men is engaging and entertaining, which typically leads to applause from the audience."
+  },
+  {
+    "question_id": 2021,
+    "reasoning": "The woman on the left is engaged in a conversation with the students, and she seems to be trying to clarify something. Her body language suggests she is focused and attentive to the discussion."
+  },
+  {
+    "question_id": 2029,
+    "reasoning": "The man in the glasses is not present in the image, so we cannot determine his reaction. However, the man in red white and blue is sitting on a couch and appears to be engaged in conversation with the host. His body language suggests that he is attentive and interested in the discussion."
+  },
+  {
+    "question_id": 2030,
+    "reasoning": "The woman is clearly upset and frustrated with the man's behavior, as evidenced by her angry tone and the fact that she is tearing up. She is also dismissive of his attempts to reassure her, saying \"can wait\" multiple times. Her actions and words suggest that she does not care about how the man feels."
+  },
+  {
+    "question_id": 2035,
+    "reasoning": "The video shows a man holding a toy while a little girl plays in a pool filled with colorful beads. It seems like the man is interacting with the girl, possibly to entertain her or engage her in play."
+  },
+  {
+    "question_id": 2068,
+    "reasoning": "The transcript indicates that the man has seen the woman at the Met Gala and watched her in \"The Crown,\" suggesting they have met before."
+  },
+  {
+    "question_id": 2070,
+    "reasoning": "The passage describes the men reacting to the door buzzer going off. It mentions that they are in a room where they are discussing something, and then the buzzer goes off. The men are surprised by the buzzer, as they were not expecting anyone."
+  },
+  {
+    "question_id": 2075,
+    "reasoning": "The man in the brown jacket shows strong agreement with Rick by changing his tone and pace of speech, which indicates a shift in emphasis and intensity. This suggests he is emphasizing his support for Rick's position."
+  },
+  {
+    "question_id": 2076,
+    "reasoning": "The man in the red shirt is seen sitting at a desk with papers and a laptop, indicating he is likely a co-host or commentator on the show. His body language, such as maintaining eye contact and gesturing, suggests he is actively engaging with his co-host. This behavior aligns with option B, where he maintains eye contact with the co-host when he was talking."
+  },
+  {
+    "question_id": 2085,
+    "reasoning": "The man with hair is likely sighing because he is realizing that the bald man is lying about his readiness for the fight. This realization might lead to a sense of sympathy or understanding towards the bald man."
+  },
+  {
+    "question_id": 2100,
+    "reasoning": "The woman's reaction is not described in the transcript. However, based on the context provided, it seems that the man is discussing the emotional impact of the situation on the woman, which could potentially lead to a negative reaction."
+  },
+  {
+    "question_id": 2101,
+    "reasoning": "The video shows the taller man reacting to the woman's request to work on \"perception.\" He seems to be contemplating her request and thinks about it for a moment before responding."
+  }
+]

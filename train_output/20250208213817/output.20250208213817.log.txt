@@ -1,9 +1,0 @@
-2025-02-08 21:39:10-finetune_distributed.py:246-INFO >> Batch 1 of epoch 1/4, training loss : 0.7014365792
-2025-02-08 21:39:32-finetune_distributed.py:246-INFO >> Batch 2 of epoch 1/4, training loss : 0.6006619334
-2025-02-08 21:39:40-finetune_distributed.py:246-INFO >> Batch 1 of epoch 2/4, training loss : 0.5539676547
-2025-02-08 21:39:56-finetune_distributed.py:246-INFO >> Batch 2 of epoch 2/4, training loss : 0.2157839984
-2025-02-08 21:40:04-finetune_distributed.py:246-INFO >> Batch 1 of epoch 3/4, training loss : 0.2580858469
-2025-02-08 21:40:21-finetune_distributed.py:246-INFO >> Batch 2 of epoch 3/4, training loss : 0.0230797287
-2025-02-08 21:40:27-finetune_distributed.py:246-INFO >> Batch 1 of epoch 4/4, training loss : 0.1740835607
-2025-02-08 21:40:43-finetune_distributed.py:246-INFO >> Batch 2 of epoch 4/4, training loss : 0.0112710763
-2025-02-08 21:41:19-finetune_distributed.py:186-INFO >> chat template saved in train_output/20250208213817/chat_template.json

@@ -185,48 +185,108 @@ def write_chat_template(processor, output_dir):
         writer.write(chat_template_json_string)
         logger.info(f"chat template saved in {output_chat_template_file}")
 
+# def train():
+#     # Load the model on the available device(s)
+#     # We recommend enabling flash_attention_2 for better acceleration and memory saving, especially in multi-image and video scenarios.
+#     # model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+#     #     "Qwen/Qwen2.5-VL-3B-Instruct",
+#     #     torch_dtype=torch.bfloat16,
+#     #     attn_implementation="flash_attention_2",
+#     #     device_map="auto",
+#     # )
+#     print("Loading model...")
+#     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+#         "Qwen/Qwen2.5-VL-3B-Instruct", torch_dtype="bfloat16"
+#     )
+#     model.gradient_checkpointing_enable()
+
+#     # Load processor. 
+#     # The default range for the number of visual tokens per image in the model is 4-16384. You can set min_pixels and max_pixels according to your needs, such as a token count range of 256-1280, to balance speed and memory usage.
+#     # min_pixels = 256*28*28
+#     # max_pixels = 1280*28*28
+
+#     # **Note:** About padding_side parameter, it default value is "left", here we set it as "right".
+#     # For why, read below.
+#     # Typically, in training, when batch size of training dataloader is > 1, it is often we need pad shorter inputs to the same length.
+#     # To pad, we often add "padding_token_id" to the right side of shorter inputs to make them the same length and set 0 in attention_mask for those padding_token_id.
+#     # BTW, in batching inference, we must use "padding_side" left, as generation usually uses the last token of output list of tokens.
+#     # 
+#     # If you like to read more, here are more discussions about padding and padding side:
+#     # https://github.com/huggingface/transformers/pull/26572
+#     # https://github.com/pytorch/pytorch/issues/110213
+#     # transformers/models/qwen2_vl/modeling_qwen2_vl.py: causal_mask = AttentionMaskConverter._unmask_unattended(causal_mask, min_dtype)
+    
+#     processor = AutoProcessor.from_pretrained("Qwen/Qwen2.5-VL-3B-Instruct", min_pixels=96*28*28, max_pixels=160*28*28, padding_side="right")
+#     train_loader = DataLoader(
+#         ToyDataSet("train_data/data.json"),
+#         batch_size=2,
+#         collate_fn=partial(collate_fn, processor=processor, device=device)
+#     )
+
+#     model.train()
+#     epochs = 2
+#     optimizer = AdamW(model.parameters(), lr=1e-5)
+#     model, optimizer, train_loader = accelerator.prepare(model, optimizer, train_loader)
+#     for epoch in range(epochs):
+#         steps = 0
+#         for batch in train_loader:
+#             steps += 1
+#             with accelerator.accumulate(model):
+#                 inputs, labels = batch
+#                 outputs = model(**inputs, labels=labels)
+#                 loss = outputs.loss
+#                 accelerator.backward(loss)
+#                 # If use deepseed,`accelerator.backward(loss)` is doing that automatically. Therefore, this function will not work. 
+#                 # For detail, see https://github.com/huggingface/accelerate/blob/main/src/accelerate/utils/deepspeed.py , DeepSpeedOptimizerWrapper.step is an "pass" function.
+#                 optimizer.step() 
+#                 # If use deepseed,`accelerator.backward(loss)` is doing that automatically. Therefore, this function will not work.
+#                 # For detail, see https://github.com/huggingface/accelerate/blob/main/src/accelerate/utils/deepspeed.py , DeepSpeedOptimizerWrapper.zero_grad is an "pass" function.
+#                 optimizer.zero_grad() 
+#                 if accelerator.is_local_main_process:
+#                     logger.info(f"Batch {steps} of epoch {epoch + 1}/{epochs}, training loss : {loss.item():.10f}")
+
+#     # Synchronize all processes to ensure training completion before saving the model.
+#     accelerator.wait_for_everyone()
+#     # Unwrap the model from distributed training wrappers
+#     unwrapped_model = accelerator.unwrap_model(model)
+#     # Save the model using HuggingFace's pretrained format
+
+#     unwrapped_model.save_pretrained(
+#         output_dir,
+#         is_main_process=accelerator.is_main_process,# Only save from main process to avoid conflicts
+#         save_function=accelerator.save,
+#         max_shard_size="20GB", # make sure only 1 shard. default is 5GB, ideally it should be 2 shards, however this function will create 2 folders, one folder has 3 files: model-00001-of-00002.safetensors, model-00002-of-00002.safetensors and model.safetensors; the other folder has model.safetensors file. They have some duplicated keys. Need investigate.
+#         state_dict=accelerator.get_state_dict(model),# Get complete state dict including optimizer states (critical for DeepSpeed)
+#     )
+#     if accelerator.is_local_main_process:
+#         processor.save_pretrained(output_dir)
+#         write_chat_template(processor, output_dir)
+
 def train():
-    # Load the model on the available device(s)
-    # We recommend enabling flash_attention_2 for better acceleration and memory saving, especially in multi-image and video scenarios.
-    # model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-    #     "Qwen/Qwen2.5-VL-3B-Instruct",
-    #     torch_dtype=torch.bfloat16,
-    #     attn_implementation="flash_attention_2",
-    #     device_map="auto",
-    # )
     print("Loading model...")
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         "Qwen/Qwen2.5-VL-3B-Instruct", torch_dtype="bfloat16"
     )
+    model.gradient_checkpointing_enable()
 
+    processor = AutoProcessor.from_pretrained(
+        "Qwen/Qwen2.5-VL-3B-Instruct",
+        min_pixels=96*28*28,
+        max_pixels=160*28*28,
+        padding_side="right"
+    )
 
-    # Load processor. 
-    # The default range for the number of visual tokens per image in the model is 4-16384. You can set min_pixels and max_pixels according to your needs, such as a token count range of 256-1280, to balance speed and memory usage.
-    # min_pixels = 256*28*28
-    # max_pixels = 1280*28*28
-
-    # **Note:** About padding_side parameter, it default value is "left", here we set it as "right".
-    # For why, read below.
-    # Typically, in training, when batch size of training dataloader is > 1, it is often we need pad shorter inputs to the same length.
-    # To pad, we often add "padding_token_id" to the right side of shorter inputs to make them the same length and set 0 in attention_mask for those padding_token_id.
-    # BTW, in batching inference, we must use "padding_side" left, as generation usually uses the last token of output list of tokens.
-    # 
-    # If you like to read more, here are more discussions about padding and padding side:
-    # https://github.com/huggingface/transformers/pull/26572
-    # https://github.com/pytorch/pytorch/issues/110213
-    # transformers/models/qwen2_vl/modeling_qwen2_vl.py: causal_mask = AttentionMaskConverter._unmask_unattended(causal_mask, min_dtype)
-    
-    processor = AutoProcessor.from_pretrained("Qwen/Qwen2.5-VL-3B-Instruct", min_pixels=128*28*28, max_pixels=256*28*28, padding_side="right")
     train_loader = DataLoader(
         ToyDataSet("train_data/data.json"),
-        batch_size=1,
+        batch_size=2,
         collate_fn=partial(collate_fn, processor=processor, device=device)
     )
 
     model.train()
-    epochs = 4
+    epochs = 2
     optimizer = AdamW(model.parameters(), lr=1e-5)
     model, optimizer, train_loader = accelerator.prepare(model, optimizer, train_loader)
+
     for epoch in range(epochs):
         steps = 0
         for batch in train_loader:
@@ -236,31 +296,40 @@ def train():
                 outputs = model(**inputs, labels=labels)
                 loss = outputs.loss
                 accelerator.backward(loss)
-                # If use deepseed,`accelerator.backward(loss)` is doing that automatically. Therefore, this function will not work. 
-                # For detail, see https://github.com/huggingface/accelerate/blob/main/src/accelerate/utils/deepspeed.py , DeepSpeedOptimizerWrapper.step is an "pass" function.
-                optimizer.step() 
-                # If use deepseed,`accelerator.backward(loss)` is doing that automatically. Therefore, this function will not work.
-                # For detail, see https://github.com/huggingface/accelerate/blob/main/src/accelerate/utils/deepspeed.py , DeepSpeedOptimizerWrapper.zero_grad is an "pass" function.
-                optimizer.zero_grad() 
+                optimizer.step()
+                optimizer.zero_grad()
                 if accelerator.is_local_main_process:
                     logger.info(f"Batch {steps} of epoch {epoch + 1}/{epochs}, training loss : {loss.item():.10f}")
 
-    # Synchronize all processes to ensure training completion before saving the model.
-    accelerator.wait_for_everyone()
-    # Unwrap the model from distributed training wrappers
-    unwrapped_model = accelerator.unwrap_model(model)
-    # Save the model using HuggingFace's pretrained format
+        # === 每个 epoch 结束后保存 checkpoint ===
+        accelerator.wait_for_everyone()
+        unwrapped_model = accelerator.unwrap_model(model)
+        epoch_ckpt_dir = os.path.join(output_dir, f"checkpoint-epoch{epoch+1}")
+        unwrapped_model.save_pretrained(
+            epoch_ckpt_dir,
+            is_main_process=accelerator.is_main_process,
+            save_function=accelerator.save,
+            max_shard_size="20GB",
+            state_dict=accelerator.get_state_dict(model),
+        )
+        if accelerator.is_local_main_process:
+            processor.save_pretrained(epoch_ckpt_dir)
+            write_chat_template(processor, epoch_ckpt_dir)
 
+    # === 最后仍然保存一份最终模型（可选）===
+    accelerator.wait_for_everyone()
+    unwrapped_model = accelerator.unwrap_model(model)
     unwrapped_model.save_pretrained(
         output_dir,
-        is_main_process=accelerator.is_main_process,# Only save from main process to avoid conflicts
+        is_main_process=accelerator.is_main_process,
         save_function=accelerator.save,
-        max_shard_size="20GB", # make sure only 1 shard. default is 5GB, ideally it should be 2 shards, however this function will create 2 folders, one folder has 3 files: model-00001-of-00002.safetensors, model-00002-of-00002.safetensors and model.safetensors; the other folder has model.safetensors file. They have some duplicated keys. Need investigate.
-        state_dict=accelerator.get_state_dict(model),# Get complete state dict including optimizer states (critical for DeepSpeed)
+        max_shard_size="20GB",
+        state_dict=accelerator.get_state_dict(model),
     )
     if accelerator.is_local_main_process:
         processor.save_pretrained(output_dir)
         write_chat_template(processor, output_dir)
+
 
 if __name__ == "__main__":
     train()
