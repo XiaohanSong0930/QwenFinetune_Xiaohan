@@ -1,21 +1,19 @@
 #!/bin/bash
-
-# ----------- Step 0: (可选) 清理缓存，避免显存没释放干净 -----------
-echo "Clearing GPU memory..."
+# -------- Step 0 环境 --------
+export PYTHONUNBUFFERED=1
 export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 
-nvidia-smi
+# 打开 DeepSpeed 保存进度日志
+export DEEPSPEED_ZERO3_SAVE_16BIT_MODEL=1
+export DEEPSPEED_LOG_LEVEL=info
+export DEEPSPEED_LOGGING=stdout   # 可选
 
-# ----------- Step 1: 启动 discriminator_train.py 训练 -----------
-echo "Starting training..."
-CUDA_VISIBLE_DEVICES="1,3,7"
-
+# -------- Step 1 启动训练 --------
+CUDA_VISIBLE_DEVICES=0,1,4,6,7 \
 accelerate launch \
   --main_process_port=29919 \
+  --num_processes=5 \
   --mixed_precision=bf16 \
   --dynamo_backend=no \
   --use_deepspeed \
-  discriminator_train.py
-
-# ----------- Step 2: 完成提示 -----------
-echo "Training finished!"
+  discriminator_train.py | tee train.log
