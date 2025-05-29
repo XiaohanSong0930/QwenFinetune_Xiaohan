@@ -4,6 +4,8 @@ import torch.nn.functional as F
 import json
 import os
 import datetime
+import torch.distributed as dist
+from datetime import timedelta
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from torch.utils.data import Dataset, DataLoader
@@ -13,13 +15,14 @@ from functools import partial
 from util.logutil import init_logger, get_logger
 from PIL import Image
 
+
+
+
 # ========== Init Accelerator ==========
 deep_plugin = DeepSpeedPlugin(
-    zero_stage=3,
+    zero_stage=2,
     gradient_accumulation_steps=2,
-    zero3_save_16bit_model=True,
-    offload_optimizer_device="cpu",
-    offload_param_device=None
+    offload_optimizer_device="cpu"
 )
 accelerator = Accelerator(deepspeed_plugin=deep_plugin)
 device = accelerator.device
@@ -198,6 +201,9 @@ def train():
     # ---------- Accelerator / DeepSpeed ----------
     global accelerator, device
 
+    if torch.distributed.is_initialized():
+        torch.distributed.barrier(device_ids=[device.index])
+
     # ---------- 日志 & 输出目录 ----------
     output_dir = f"train_output/{datetime.datetime.now():%Y%m%d%H%M%S}/"
     if accelerator.is_local_main_process:
@@ -263,47 +269,48 @@ def train():
 
         # ---------- 保存 ----------
         accelerator.wait_for_everyone()
-
-        ckpt_dir      = os.path.join(output_dir, f"checkpoint-epoch{epoch+1}")
+        ckpt_dir = os.path.join(output_dir, f"checkpoint-epoch{epoch+1}")
         base_ckpt_dir = os.path.join(ckpt_dir, "base_model")
+
         if accelerator.is_main_process:
             os.makedirs(base_ckpt_dir, exist_ok=True)
 
-        if accelerator.is_main_process:
-            logger.info("------ start gathering & saving ------")
+            # ① unwrap 模型
+            unwrapped_model = accelerator.unwrap_model(model)
 
-            # ① ZeRO-3 分片一次性 all-gather 到 rank-0 CPU
-            state_dict = accelerator.get_state_dict(model)          # ← 关键，只拷一次
+            logger.info(f"------ unwrap_model done ------")
 
-            logger.info("------ allgather done ------")
+            # ② get_state_dict 可能会卡在此，需提前 unwrap 完毕
+            state_dict = accelerator.get_state_dict(model)  # 用 wrap 的 model 调用
 
-            # ② 直接写单文件 .bin ；写完即得完整权重
-            unwrapped_model = accelerator.unwrap_model(model)       # DeepSpeedEngine --> nn.Module
-            
-            logger.info("------ unwrap_model done ------")
+            logger.info(f"------ get_state_dict done ------")
 
-            unwrapped_model.save_pretrained(
+            # ③ 保存 base 模型
+            unwrapped_model.base_model.save_pretrained(
                 base_ckpt_dir,
                 is_main_process=True,
-                save_function=accelerator.save,                      # 让 DeepSpeed 封装来写
-                state_dict=state_dict,                               # **已在 CPU，无需再搬**
-                safe_serialization=False,                            # 写 .bin 最快；若想要 .safetensors 改 True
-                max_shard_size="20GB",                               # 合并成一个大文件
+                save_function=accelerator.save,
+                state_dict=state_dict,
+                safe_serialization=True,
+                max_shard_size="20GB"
             )
-            logger.info("--- base model save done ---")
 
-            # ③ 保存分类头
+            logger.info(f"------ save base model done ------")
+
+            # ④ 保存分类头（直接使用 unwrap 后的 model）
             torch.save(
                 unwrapped_model.classification_head.state_dict(),
                 os.path.join(ckpt_dir, "classifier_head.pt")
             )
-            logger.info("✅ classifier head saved")
 
-            # ④ 最后一轮额外保存 processor & chat_template
+            logger.info(f"------ save discriminator head done ------")
+
+            # ⑤ 最后一轮额外保存 processor & chat_template
             if epoch == num_epochs - 1:
                 processor.save_pretrained(base_ckpt_dir)
                 write_chat_template(processor, base_ckpt_dir)
-                logger.info("✅ Processor & Chat-template saved")
+                logger.info(f"------ save processor and chat_template done ------")
+
 
 
 
@@ -311,3 +318,5 @@ def train():
 
 if __name__ == "__main__":
     train()
+    if torch.distributed.is_initialized():
+        torch.distributed.destroy_process_group()

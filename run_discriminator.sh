@@ -9,10 +9,10 @@ export DEEPSPEED_LOG_LEVEL=info
 export DEEPSPEED_LOGGING=stdout   # 可选
 
 # -------- Step 1 启动训练 --------
-CUDA_VISIBLE_DEVICES=0,1,4,6,7 \
+CUDA_VISIBLE_DEVICES=0,1,4,5,6,7 \
 accelerate launch \
   --main_process_port=29919 \
-  --num_processes=5 \
+  --num_processes=6 \
   --mixed_precision=bf16 \
   --dynamo_backend=no \
   --use_deepspeed \

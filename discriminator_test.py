@@ -3,32 +3,34 @@ from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from PIL import Image
 import os
 
-BASE_MODEL_DIR = "train_output/20250525153739/checkpoint-epoch2/base_model"
-CLASSIFIER_PATH = "train_output/20250525153739/checkpoint-epoch2/classifier_head.pt"
+BASE_MODEL_DIR = "train_output/20250528024158/checkpoint-epoch2/base_model"
+CLASSIFIER_PATH = "train_output/20250528024158/checkpoint-epoch2/classifier_head.pt"
 
 sample = {
-    "image_paths": [
-      "train_data/real_slices/0ajln01OfXs$1.png",
-      "train_data/real_slices/0ajln01OfXs$2.png",
-      "train_data/real_slices/0ajln01OfXs$3.png",
-      "train_data/real_slices/0ajln01OfXs$4.png",
-      "train_data/real_slices/0ajln01OfXs$5.png",
-      "train_data/real_slices/0ajln01OfXs$6.png",
-      "train_data/real_slices/0ajln01OfXs$7.png",
-      "train_data/real_slices/0ajln01OfXs$8.png"
-    ],
-    "question": "Transcript: 00:00:01.390 --> 00:00:01.400 think I got it hey Susan how's your job 00:00:01.400 --> 00:00:03.509 think I got it hey Susan how's your job at Michael K going oh they offered me a 00:00:03.509 --> 00:00:03.519 at Michael K going oh they offered me a 00:00:03.519 --> 00:00:05.990 at Michael K going oh they offered me a full-time position in accessories design 00:00:05.990 --> 00:00:06.000 full-time position in accessories design 00:00:06.000 --> 00:00:08.350 full-time position in accessories design that's awesome I know yeah when things 00:00:08.350 --> 00:00:08.360 that's awesome I know yeah when things 00:00:08.360 --> 00:00:09.709 that's awesome I know yeah when things weren't taking off I thought Jim and I 00:00:09.709 --> 00:00:09.719 weren't taking off I thought Jim and I 00:00:09.719 --> 00:00:11.350 weren't taking off I thought Jim and I were just going to start having babies 00:00:11.350 --> 00:00:11.360 were just going to start having babies 00:00:11.360 --> 00:00:13.389 were just going to start having babies but Hannah really encouraged me to keep 00:00:13.389 --> 00:00:13.399 but Hannah really encouraged me to keep 00:00:13.399 --> 00:00:15.990 but Hannah really encouraged me to keep going whenever I think of giving up I 00:00:15.990 --> 00:00:16.000 going whenever I think of giving up I 00:00:16.000 --> 00:00:17.830 going whenever I think of giving up I think of Hannah I mean I didn't 00:00:17.830 --> 00:00:17.840 think of Hannah I mean I didn't 00:00:17.840 --> 00:00:19.350 think of Hannah I mean I didn't sacrifice everything just to get married 00:00:19.350 --> 00:00:19.360 sacrifice everything just to get married 00:00:19.360 --> 00:00:21.150 sacrifice everything just to get married and have kids you know I came here for 00:00:21.150 --> 00:00:21.160 and have kids you know I came here for 00:00:21.160 --> 00:00:22.830 and have kids you know I came here for my dreams and I take that really 00:00:22.830 --> 00:00:22.840 my dreams and I take that really 00:00:22.840 --> 00:00:25.470 my dreams and I take that really seriously yeah wait a minute are you 00:00:25.470 --> 00:00:25.480 seriously yeah wait a minute are you 00:00:25.480 --> 00:00:27.270 seriously yeah wait a minute are you guys saying that you don't think I take 00:00:27.270 --> 00:00:27.280 guys saying that you don't think I take 00:00:27.280 --> 00:00:28.869 guys saying that you don't think I take my dream seriously because I got 00:00:28.869 --> 00:00:28.879 my dream seriously because I got 00:00:28.879 --> 00:00:30.590 my dream seriously because I got pregnant that's not what she's saying 00:00:30.590 --> 00:00:30.600 pregnant that's not what she's saying 00:00:30.600 --> 00:00:32.590 pregnant that's not what she's saying that's exactly what she just said you 00:00:32.590 --> 00:00:32.600 that's exactly what she just said you 00:00:32.600 --> 00:00:34.310 that's exactly what she just said you did get give up Project Runway they 00:00:34.310 --> 00:00:34.320 did get give up Project Runway they 00:00:34.320 --> 00:00:36.509 did get give up Project Runway they pushed the show 6 months and your due 00:00:36.509 --> 00:00:36.519 pushed the show 6 months and your due 00:00:36.519 --> 00:00:38.070 pushed the show 6 months and your due date landed smack in the middle of the 00:00:38.070 --> 00:00:38.080 date landed smack in the middle of the 00:00:38.080 --> 00:00:40.350 date landed smack in the middle of the show so it did kind of get in the way 00:00:40.350 --> 00:00:40.360 show so it did kind of get in the way 00:00:40.360 --> 00:00:42.429 show so it did kind of get in the way look you don't have to get mad okay it's 00:00:42.429 --> 00:00:42.439 look you don't have to get mad okay it's 00:00:42.439 --> 00:00:44.749 look you don't have to get mad okay it's just a different decision 00:00:44.749 --> 00:00:44.759 just a different decision 00:00:44.759 --> 00:00:48.789 just a different decision alen is that your ex oh 00:00:48.789 --> 00:00:48.799 alen is that your ex oh 00:00:48.799 --> 00:00:55.789 alen is that your ex oh who runs in a tank what a douche 00:00:55.789 --> 00:00:55.799. **End of transcript** Combine images and transcript, answer this question: Why does the man start running towards the pregnant woman?. Options: A) He wants to ask her for directions.; B) He is trying to catch his dog who ran towards the pregnant woman.; C) She dropped something, and he wants to return it.; D) He realizes that she is his ex-girlfriend.. Answer with a letter A or B or C or D.",
-    "user_info": "",
-    "cot_instruction": "Let's do this step by step.",
-    "reasoning": "The transcript mentions that the man starts running towards the pregnant woman after she says \"alén is that your ex.\" This suggests that he recognizes her as his ex-girlfriend."
-  }
+      "image_paths": [
+        "train_data/real_slices/0-HM2VCdrC0$1.png",
+        "train_data/real_slices/0-HM2VCdrC0$2.png",
+        "train_data/real_slices/0-HM2VCdrC0$3.png",
+        "train_data/real_slices/0-HM2VCdrC0$4.png",
+        "train_data/real_slices/0-HM2VCdrC0$5.png",
+        "train_data/real_slices/0-HM2VCdrC0$6.png",
+        "train_data/real_slices/0-HM2VCdrC0$7.png",
+        "train_data/real_slices/0-HM2VCdrC0$8.png"
+      ],
+      "question": "Transcript: 00:00:01.240 --> 00:00:04.950 God what why are you here wouldn't 00:00:04.950 --> 00:00:04.960 God what why are you here wouldn't 00:00:04.960 --> 00:00:06.910 God what why are you here wouldn't return my phone calls what do you want 00:00:06.910 --> 00:00:06.920 return my phone calls what do you want 00:00:06.920 --> 00:00:09.829 return my phone calls what do you want you want another picture your paper Jane 00:00:09.829 --> 00:00:09.839 you want another picture your paper Jane 00:00:09.839 --> 00:00:12.830 you want another picture your paper Jane I sorry please you used me to get ahead 00:00:12.830 --> 00:00:12.840 I sorry please you used me to get ahead 00:00:12.840 --> 00:00:15.590 I sorry please you used me to get ahead in your career be a man and admit it or 00:00:15.590 --> 00:00:15.600 in your career be a man and admit it or 00:00:15.600 --> 00:00:17.550 in your career be a man and admit it or or don't but please please don't pretend 00:00:17.550 --> 00:00:17.560 or don't but please please don't pretend 00:00:17.560 --> 00:00:20.429 or don't but please please don't pretend that you give a you just please let 00:00:20.429 --> 00:00:20.439 that you give a you just please let 00:00:20.439 --> 00:00:23.269 that you give a you just please let me explain no it doesn't matter I just 00:00:23.269 --> 00:00:23.279 me explain no it doesn't matter I just 00:00:23.279 --> 00:00:25.189 me explain no it doesn't matter I just destroyed my life and I didn't need your 00:00:25.189 --> 00:00:25.199 destroyed my life and I didn't need your 00:00:25.199 --> 00:00:27.670 destroyed my life and I didn't need your help to do it 00:00:27.670 --> 00:00:27.680 help to do it 00:00:27.680 --> 00:00:30.549 help to do it great finally I saw what you did there 00:00:30.549 --> 00:00:30.559 great finally I saw what you did there 00:00:30.559 --> 00:00:31.389 great finally I saw what you did there and you know what I thought it was 00:00:31.389 --> 00:00:31.399 and you know what I thought it was 00:00:31.399 --> 00:00:33.950 and you know what I thought it was amazing was it absolutely certifiably 00:00:33.950 --> 00:00:33.960 amazing was it absolutely certifiably 00:00:33.960 --> 00:00:35.790 amazing was it absolutely certifiably nuts yes it was but you did something 00:00:35.790 --> 00:00:35.800 nuts yes it was but you did something 00:00:35.800 --> 00:00:37.830 nuts yes it was but you did something Jane for the first time you were not 00:00:37.830 --> 00:00:37.840 Jane for the first time you were not 00:00:37.840 --> 00:00:40.029 Jane for the first time you were not just the perfect bridesmaid stop just 00:00:40.029 --> 00:00:40.039 just the perfect bridesmaid stop just 00:00:40.039 --> 00:00:41.549 just the perfect bridesmaid stop just please I'm I'm not doing this with you 00:00:41.549 --> 00:00:41.559 please I'm I'm not doing this with you 00:00:41.559 --> 00:00:42.830 please I'm I'm not doing this with you again I don't even know why I'm sitting 00:00:42.830 --> 00:00:42.840 again I don't even know why I'm sitting 00:00:42.840 --> 00:00:44.110 again I don't even know why I'm sitting here talking to you you know what let me 00:00:44.110 --> 00:00:44.120 here talking to you you know what let me 00:00:44.120 --> 00:00:47.310 here talking to you you know what let me tell look here listen to me do you want 00:00:47.310 --> 00:00:47.320 tell look here listen to me do you want 00:00:47.320 --> 00:00:48.950 tell look here listen to me do you want to know the real reason why I came here 00:00:48.950 --> 00:00:48.960 to know the real reason why I came here 00:00:48.960 --> 00:00:50.830 to know the real reason why I came here tonight because I knew this was going to 00:00:50.830 --> 00:00:50.840 tonight because I knew this was going to 00:00:50.840 --> 00:00:52.670 tonight because I knew this was going to be hard for you and for the first time 00:00:52.670 --> 00:00:52.680 be hard for you and for the first time 00:00:52.680 --> 00:00:54.270 be hard for you and for the first time in a really long time I wanted to be 00:00:54.270 --> 00:00:54.280 in a really long time I wanted to be 00:00:54.280 --> 00:00:56.990 in a really long time I wanted to be there for somebody yeah 00:00:56.990 --> 00:00:57.000 there for somebody yeah 00:00:57.000 --> 00:00:59.270 there for somebody yeah all right I I I messed up I did I'm 00:00:59.270 --> 00:00:59.280 all right I I I messed up I did I'm. **End of transcript** Combine images and transcript, answer this question: What is the man's attitude during the conversation?. Options: A) The man is contrite and so takes the woman's barbs with no complaint, knowing that she is justified in her anger.; B) The man is trying to sell a car to the woman.; C) He feels like he is being attacked during the argument.; D) The man is dismissive of the woman's concerns and starts talking over her.. Answer with a letter A or B or C or D.",
+      "user_info": "",
+      "cot_instruction": "Let's do this step by step.",
+      "reasoning": "The man is seen apologizing multiple times and admitting his mistakes, indicating a contrite attitude. He also seems to be trying to understand the woman's perspective and apologize for past actions.",
+      "label": 1
+}
 
 
 class DiscriminatorModel(torch.nn.Module):
     def __init__(self, base_model):
         super().__init__()
         self.base_model = base_model
-        self.classification_head = torch.nn.Linear(base_model.config.hidden_size, 2)
+        hidden_size = base_model.config.hidden_size
+        self.classification_head = torch.nn.Linear(hidden_size, 2)
 
     def forward(self, **batch):
         outputs = self.base_model(**batch, output_hidden_states=True)
@@ -38,7 +40,7 @@ class DiscriminatorModel(torch.nn.Module):
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-base_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(BASE_MODEL_DIR, torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32).to(device)
+base_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(BASE_MODEL_DIR, torch_dtype=torch.float32).to(device)
 processor = AutoProcessor.from_pretrained(BASE_MODEL_DIR)
 
 model = DiscriminatorModel(base_model)
@@ -48,12 +50,11 @@ model.eval()
 
 
 images = [Image.open(path).convert("RGB") for path in sample["image_paths"]]
-question = sample["question"]
 
-messages = [{
-    "role": "user",
-    "content": [{"type": "image", "image": "<image>"} for _ in images] + [{"type": "text", "text": question}]
-}]
+final_prompt = f"{sample['question']}\n\n{sample.get('cot_instruction', '')}\n\nReasoning: {sample.get('reasoning', '')}"
+contents = [{"type": "image", "image": "<image>"} for _ in images]
+contents.append({"type": "text", "text": final_prompt})
+messages = [{"role": "user", "content": contents}]
 text = processor.apply_chat_template(messages, tokenize=False)
 
 inputs = processor(
@@ -61,10 +62,11 @@ inputs = processor(
     images=[images],
     return_tensors="pt",
     padding=True
-).to(device)
+)
+inputs = {k: v.to(device) for k, v in inputs.items()}
 
 with torch.no_grad():
     logits = model(**inputs)
     pred = torch.argmax(logits, dim=-1).item()
 
-print(f"Predicted Label: {pred} ({'fake' if pred == 1 else 'real'})")
+print(f"Predicted Label: {pred} ({'real' if pred == 1 else 'fake'})")
